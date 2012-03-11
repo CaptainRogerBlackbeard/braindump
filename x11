@@ -1,7 +1,11 @@
 
 apps:
   
-  xlsfonts
+	xlsfonts
+	xfontsel
+	xrdb
+		-query -all
+    xdg-open
 
 
 files:
