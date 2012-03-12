@@ -1,0 +1,4 @@
+
+check conf and show config
+
+$ named-checkconf -p /usr/local/etc/named.conf
