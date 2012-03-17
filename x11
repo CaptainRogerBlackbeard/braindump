@@ -6,6 +6,8 @@ apps:
 	xrdb
 		-query -all
     xdg-open
+    urxvt-unicode     # xterm w/unicode
+    xlock
 
 
 files:
