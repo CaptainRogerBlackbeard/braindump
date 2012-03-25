@@ -6,3 +6,9 @@
 	ci
 	rlog
 	rcsfile
+
+    $ mkdir RCS
+    $ ci pf.conf
+    $ co -l pf.conf
+    $ <edit the file>
+    $ ci -u pf.conf

@@ -2,3 +2,10 @@ view a servers fingerprint:
 
   $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
 
+get a listing of the fingerprints for all known hosts
+
+  $ ssh-keygen -lv -f ~/.ssh/known_hosts
+
+gather ssh public keys
+
+  $ ssh-keyscan 

@@ -1,0 +1,2 @@
+vmstat -m
+vmstat -z

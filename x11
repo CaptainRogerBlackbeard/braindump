@@ -1,13 +1,18 @@
 
 apps:
   
-	xlsfonts
-	xfontsel
-	xrdb
-		-query -all
-    xdg-open
-    urxvt-unicode     # xterm w/unicode
-    xlock
+  xwit
+  xlsfonts
+  xfontsel
+  xrdb
+    -query -all
+  xdg-open
+  urxvt-unicode     # xterm w/unicode
+  xlock
+  xmodmap  - utility for modifying keymaps and pointer button mappings in X
+    xmodmap -pm
+  fbsetbg - Set a background wallpaper or pattern
+  root-tail - print text directly to X11 root window
 
 
 files:
