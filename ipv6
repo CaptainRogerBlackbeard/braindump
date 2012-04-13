@@ -1,0 +1,18 @@
+
+man stf
+
+
+6to4
+  ifconfig stf0 create
+  ifconfig stf0 inet6 $6to4 prefixlen 16 alias
+  route add -inet6 default 2002:c058:6301::
+
+
+6to4 public routers
+6to4 operates over public internet infrastructure, the routers can be reached under the following anycast addresses:
+IPv4: 192.88.99.1
+IPv6: 2002:c058:6301::
+
+Building a 6to4-prefix
+The 6to4 client’s own prefix is created from the 6to4 2002::/16 prefix with the following method (WWXX:YYZZ is the hexadecimal representation of the public IPv4 address w.x.y.z):
+2002:WWXX:YYZZ::/48

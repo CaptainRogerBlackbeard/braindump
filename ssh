@@ -9,3 +9,8 @@ get a listing of the fingerprints for all known hosts
 gather ssh public keys
 
   $ ssh-keyscan 
+
+#
+# ports
+#
+sshguard

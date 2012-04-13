@@ -1,0 +1,40 @@
+PF
+
+#
+# BASIC
+#
+set skip on l0
+set block-policy return
+scrub in all
+antispoof quick for lo0 inet
+block in from no-route to any
+
+#
+# BLOCKING
+#
+block in log
+block from <blacklist> to any
+block in quick on [ your interface ] proto tcp from <sshguard> to any port 22 label "ssh bruteforce"
+
+#
+# OUTGOING
+#
+pass out keep state
+
+#
+# TABLE
+#
+table <sshguard> persists
+table <blacklist> persist file "/usr/local/etc/blacklist"
+
+#
+# PASS
+#
+pass proto icmp all
+pass proto icmp6 all
+
+#
+# PASS: SSH
+#
+pass in on [ insert your interface ] proto tcp from any to any port 22
+

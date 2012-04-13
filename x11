@@ -1,6 +1,9 @@
 
 apps:
   
+  xcompmgr
+  dokcy
+  batti http://code.google.com/p/batti-gtk/
   xwit
   xlsfonts
   xfontsel

@@ -1,0 +1,9 @@
+
+# find words for crosswords
+$ grep '^.a...x.$' /usr/share/dict/words
+
+# print out words that repeat themselves:
+$ grep '^\(.*\)\1$' /usr/share/dict/words
+
+
+
